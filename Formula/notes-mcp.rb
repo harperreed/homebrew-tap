@@ -10,22 +10,22 @@ class NotesMcp < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/harperreed/notes-mcp/releases/download/v0.1.0/notes-mcp_0.1.0_darwin_amd64.tar.gz"
-    sha256 "23033d1341288b4630088d73181c3985595292e8a1c172eae1385464b8356aaa"
+    sha256 "9d995a3908ac04b061ff187e6fc8f1b2ef254c6d324fb5f9a58828ac0609064f"
 
     def install
-      bin.install "apple-notes-mcp"
+      bin.install "notes-mcp"
     end
   end
   if Hardware::CPU.arm?
     url "https://github.com/harperreed/notes-mcp/releases/download/v0.1.0/notes-mcp_0.1.0_darwin_arm64.tar.gz"
-    sha256 "83f27ec03e9cb98298af96256e317d58c81653359ced3e338145b5b1406c04ed"
+    sha256 "17582fe93e144e15e17a6b0dba2d7f9a83ca0b4d2c6bb6fca2f86a0f5f7e6a83"
 
     def install
-      bin.install "apple-notes-mcp"
+      bin.install "notes-mcp"
     end
   end
 
   test do
-    system "#{bin}/apple-notes-mcp", "--version"
+    system "#{bin}/notes-mcp", "help"
   end
 end
