@@ -9,8 +9,8 @@ class Micropub < Formula
 
   bottle do
     root_url "https://github.com/harperreed/micropub/releases/download/v0.2.5"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "fe54975f2b3d230da0506f55d58e48b927318ab4cdd33a1a5c237ac15fe6ceef"
-    sha256 cellar: :any_skip_relocation, ventura: "053a05e23a7c3b72556c39c5afb5a64bbea0d0b89c6a9dc1f6d62bb58a864013"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "ccaed9cdc2a6702e3e08b0a9fbfbeb26fa9f595dc4c8ac0f1258de4a81fcc540"
+    sha256 cellar: :any_skip_relocation, ventura: "e38e3ba7b65e51360f203d147fec183fff4a54a2cc2cee2110e74724ced20d71"
   end
 
   def install
