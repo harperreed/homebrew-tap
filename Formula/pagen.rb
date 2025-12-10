@@ -5,20 +5,20 @@
 class Pagen < Formula
   desc "Personal Agent Toolkit - CRM with MCP server and CLI"
   homepage "https://github.com/harperreed/pagen"
-  version "0.4.1"
+  version "0.4.3"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/pagen/releases/download/v0.4.1/pagen_0.4.1_darwin_amd64.tar.gz"
-    sha256 "4e8c40032d4d5e8023a9273bfa608f0ba33bb4fd3665efa7b75267b5306ecbff"
+    url "https://github.com/harperreed/pagen/releases/download/v0.4.3/pagen_0.4.3_darwin_amd64.tar.gz"
+    sha256 "5af47c2d56a0e3fca9380f862b3211a7974f2972dfb41e5c97400451e86ffd9f"
 
     def install
       bin.install "pagen"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/pagen/releases/download/v0.4.1/pagen_0.4.1_darwin_arm64.tar.gz"
-    sha256 "71fa06de96c9ccaef6cf0a15fa505619622baff8eb126c47822a95e2625964cc"
+    url "https://github.com/harperreed/pagen/releases/download/v0.4.3/pagen_0.4.3_darwin_arm64.tar.gz"
+    sha256 "4606cf141abc907cd6cd6f99fc6c2cabba0e2675e410f97d91e7375f5b1090ee"
 
     def install
       bin.install "pagen"
