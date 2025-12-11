@@ -5,21 +5,21 @@
 class Digest < Formula
   desc "RSS/Atom feed tracker for humans and AI agents"
   homepage "https://github.com/harperreed/digest"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/digest/releases/download/v0.3.1/digest_0.3.1_Darwin_x86_64.tar.gz"
-    sha256 "a17d9587b72b7cfc08bb4cfc1a0e973d2da675cce1e1ea855f62563e1ac2219d"
+    url "https://github.com/harperreed/digest/releases/download/v0.4.0/digest_0.4.0_Darwin_x86_64.tar.gz"
+    sha256 "5787f8a8d235f1bfa99f3d784b2cc029766a0d13bf0bc9b9496721d41621d858"
 
     def install
       bin.install "digest"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/digest/releases/download/v0.3.1/digest_0.3.1_Darwin_arm64.tar.gz"
-    sha256 "929d5944bbeb55a28336184b18c8a5d8713cd38fe8409f2668afe7700d8c24c9"
+    url "https://github.com/harperreed/digest/releases/download/v0.4.0/digest_0.4.0_Darwin_arm64.tar.gz"
+    sha256 "c5ce86fb46c4bb12d2c7264890ad84d96ed51943132f3f627246fea291498e0a"
 
     def install
       bin.install "digest"
