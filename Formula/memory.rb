@@ -5,13 +5,13 @@
 class Memory < Formula
   desc "HMLR - Hierarchical Memory Lookup & Routing for LLM agents"
   homepage "https://github.com/harperreed/remember-standalone"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/memory/releases/download/v0.2.0/memory_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "9602e10935373dcdc977771e5bb43eaa40767e866e6af22207a37970dfb24a9e"
+    url "https://github.com/harperreed/memory/releases/download/v0.3.0/memory_0.3.0_Darwin_x86_64.tar.gz"
+    sha256 "0aaba3745e84402f0f05b5fb68cdad9b1bf8c7f6eaa2056e7aeabe978d42c4b3"
 
     def install
       bin.install "memory"
@@ -19,8 +19,8 @@ class Memory < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/memory/releases/download/v0.2.0/memory_0.2.0_Darwin_arm64.tar.gz"
-    sha256 "ca025158e188d5a53f0499de901995e0eb8ffb1c05470cdca42606f64ae200b0"
+    url "https://github.com/harperreed/memory/releases/download/v0.3.0/memory_0.3.0_Darwin_arm64.tar.gz"
+    sha256 "b316c295bfe520c91a84605b0e26e66c491f8617e1b2d0948cdb785c7d2f581c"
 
     def install
       bin.install "memory"
