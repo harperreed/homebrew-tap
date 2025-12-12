@@ -7,10 +7,10 @@ class Chronicle < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/harperreed/chronicle/releases/download/v1.1.4/chronicle-darwin-arm64.tar.gz"
-      sha256 "2ed59ed99635bda65daca81c779f5483ea51cdbf7633c0e10d05a488c3077d95"
+      sha256 "d49d65b31609f90000132d069ebbc16df95804625259afa9b80ece19bf2f155d"
     else
       url "https://github.com/harperreed/chronicle/releases/download/v1.1.4/chronicle-darwin-amd64.tar.gz"
-      sha256 "7933c8d893fb903db36ad1763fc2571b604e6dfb47d3306e6058e9a79985e9fd"
+      sha256 "35e199c6917e7ce89758b3755382eae3f4b453d0d52242180bb01446d3fa5fe5"
     end
   end
 
