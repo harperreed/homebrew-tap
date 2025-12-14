@@ -5,21 +5,21 @@
 class Position < Formula
   desc "A super simple git-aware todo manager"
   homepage "https://github.com/harperreed/position"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/position/releases/download/v0.2.0/position_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "817a95451caad8daeafcb6ab9e2fd142854ed581c8c83725905e5661e858fc9e"
+    url "https://github.com/harperreed/position/releases/download/v0.3.0/position_0.3.0_Darwin_x86_64.tar.gz"
+    sha256 "133b0cb019960a0ba4f7dbb1a699473e4c132bed6a23f26d333ca6f63e92ab04"
 
     def install
       bin.install "position"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/position/releases/download/v0.2.0/position_0.2.0_Darwin_arm64.tar.gz"
-    sha256 "80bc84b40d207591ea8e68e107f501c245eccb457b1857c739dd7640dd08d989"
+    url "https://github.com/harperreed/position/releases/download/v0.3.0/position_0.3.0_Darwin_arm64.tar.gz"
+    sha256 "5ae8dbef4bb2637690ca5d70675330608e2e34d40cc67babe513d1f6ceadfac3"
 
     def install
       bin.install "position"
