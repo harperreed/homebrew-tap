@@ -5,21 +5,21 @@
 class Sweet < Formula
   desc "A super simple git-aware todo manager"
   homepage "https://github.com/harperreed/sweet"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/sweet/releases/download/v0.2.4/sweet_0.2.4_Darwin_x86_64.tar.gz"
-    sha256 "6ae861708fd8eb8f51b0fb1f03d12f80dd52872a60f4e87e8d61e576eac48c76"
+    url "https://github.com/harperreed/sweet/releases/download/v0.2.5/sweet_0.2.5_Darwin_x86_64.tar.gz"
+    sha256 "b4756b7ca3afaf4b5973aefe3f1a44aa0706b35d026d0f08f50ae7aa4f7a623f"
 
     def install
       bin.install "sweet"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/sweet/releases/download/v0.2.4/sweet_0.2.4_Darwin_arm64.tar.gz"
-    sha256 "bf2c630d9fdc6e97a335ae13b335b72e910dd1afd321128b75b1ac5f61e6c608"
+    url "https://github.com/harperreed/sweet/releases/download/v0.2.5/sweet_0.2.5_Darwin_arm64.tar.gz"
+    sha256 "ba9bc3d8847979852af7ddc32410dfbbe2c33f7f417adfd7df11456a3c5ef9ce"
 
     def install
       bin.install "sweet"
