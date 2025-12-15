@@ -11,7 +11,7 @@ class Sweet < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/harperreed/sweet/releases/download/v0.1.0/sweet_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "08a08f9c862f87231ed5a2d40a19647cecf7835548e453f97f070794fd7c5a9e"
+    sha256 "82d0178be50b6d5cb569967821287ffde3e4c8effa51654e1e6bffeb7e8de523"
 
     def install
       bin.install "sweet"
@@ -19,7 +19,7 @@ class Sweet < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/harperreed/sweet/releases/download/v0.1.0/sweet_0.1.0_Darwin_arm64.tar.gz"
-    sha256 "c517fa19153a1f16afe4ac3c6ebd9c42b59e0da87368455817685506d7a31c76"
+    sha256 "e7737554d9015732614afebd28486aabe2d0e5b84f9bfa1077be77e11f151349"
 
     def install
       bin.install "sweet"
