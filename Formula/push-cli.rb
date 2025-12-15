@@ -11,7 +11,7 @@ class PushCli < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/harperreed/push-cli/releases/download/v0.0.2/push-cli_0.0.2_Darwin_x86_64.tar.gz"
-    sha256 "f2d7bc3a2f7465f2486d5b32fb01d2e818ddc36b79f8f734fcd6e72e6941561b"
+    sha256 "27a62398b7ed4d001bdd18d4b4ccd266ca9d512200544a7b471dfa0e6b685292"
 
     def install
       bin.install "push"
@@ -19,7 +19,7 @@ class PushCli < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/harperreed/push-cli/releases/download/v0.0.2/push-cli_0.0.2_Darwin_arm64.tar.gz"
-    sha256 "fef891f502fb6ce70e2292a24f535ef334664b534510ded1cb1d17bfb81a12c0"
+    sha256 "347bff50f4f87c4ca51e940ca56bada013782da319d60d84d3ba494026f13f8f"
 
     def install
       bin.install "push"
