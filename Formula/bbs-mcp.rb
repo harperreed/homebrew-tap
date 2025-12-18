@@ -5,21 +5,21 @@
 class BbsMcp < Formula
   desc "A lightweight message board for humans and AI agents"
   homepage "https://github.com/harperreed/bbs"
-  version "1.0.6"
+  version "1.0.8"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/bbs-mcp/releases/download/v1.0.6/bbs-mcp_1.0.6_Darwin_x86_64.tar.gz"
-    sha256 "cc4612e8700d3624fb08fc87935db162bcb848c4daa4de6b4f08699f1dfb4733"
+    url "https://github.com/harperreed/bbs-mcp/releases/download/v1.0.8/bbs-mcp_1.0.8_Darwin_x86_64.tar.gz"
+    sha256 "f0f675c47a817b122731924e2c4ea684f7a315a827655e3bdd4b3d5ca0e78427"
 
     def install
       bin.install "bbs"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/bbs-mcp/releases/download/v1.0.6/bbs-mcp_1.0.6_Darwin_arm64.tar.gz"
-    sha256 "1df636fcbeebb129e9da486ee7cd40037db77e33edd328e4ce7f0ccef84ffb68"
+    url "https://github.com/harperreed/bbs-mcp/releases/download/v1.0.8/bbs-mcp_1.0.8_Darwin_arm64.tar.gz"
+    sha256 "7cef6e78ed7bc2c41f37c71dc10a18a04ace00cb2b3b161716e2ac00ab894570"
 
     def install
       bin.install "bbs"
