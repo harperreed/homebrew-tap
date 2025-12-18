@@ -5,21 +5,21 @@
 class Toki < Formula
   desc "A super simple git-aware todo manager"
   homepage "https://github.com/harperreed/toki"
-  version "0.4.3"
+  version "0.4.4"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/toki/releases/download/v0.4.3/toki_0.4.3_Darwin_x86_64.tar.gz"
-    sha256 "279f1e280093897a27514f98dec710c017e86841ad95649b0cac31a3dd5c87c5"
+    url "https://github.com/harperreed/toki/releases/download/v0.4.4/toki_0.4.4_Darwin_x86_64.tar.gz"
+    sha256 "698d00defd21ecc7daf203e2a0bc504f604171c92828611fd0dcc5831038120c"
 
     def install
       bin.install "toki"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/toki/releases/download/v0.4.3/toki_0.4.3_Darwin_arm64.tar.gz"
-    sha256 "fb6eb91b7670d87331ca7fa160e3a700e224fc2ae7fcfa996913583d5edcc791"
+    url "https://github.com/harperreed/toki/releases/download/v0.4.4/toki_0.4.4_Darwin_arm64.tar.gz"
+    sha256 "d78d28d526244210d430974f46036c77d91e14b3a839f8762f6cc400b8885da6"
 
     def install
       bin.install "toki"
