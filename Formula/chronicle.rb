@@ -1,16 +1,16 @@
 class Chronicle < Formula
   desc "Timestamped logging tool with SQLite and optional project log files"
   homepage "https://github.com/harperreed/chronicle"
-  version "0.7.5"
+  version "1.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/harperreed/chronicle/releases/download/v0.7.5/chronicle-darwin-arm64.tar.gz"
-      sha256 "346f04f490f9cf34cd76e8bcc1dc11e7217aa4a01e6d720c6c38934ab873cd9f"
+      url "https://github.com/harperreed/chronicle/releases/download/v1.2.4/chronicle-darwin-arm64.tar.gz"
+      sha256 "976191ef8d128bcf2d382c080f87711cd129927a20ed161a168fa444ccf5d0dc"
     else
-      url "https://github.com/harperreed/chronicle/releases/download/v0.7.5/chronicle-darwin-amd64.tar.gz"
-      sha256 "956e7ef6f76b29889b987bce70a89eb03dec54998859af68161ad2e41f813fc8"
+      url "https://github.com/harperreed/chronicle/releases/download/v1.2.4/chronicle-darwin-amd64.tar.gz"
+      sha256 "e4fa6f598b99f3ceaad7f387be0415705d36d8de0d1c68000e0cec4c0331e047"
     end
   end
 
