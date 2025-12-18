@@ -5,21 +5,21 @@
 class Digest < Formula
   desc "RSS/Atom feed tracker for humans and AI agents"
   homepage "https://github.com/harperreed/digest"
-  version "0.7.4"
+  version "0.7.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harperreed/digest/releases/download/v0.7.4/digest_0.7.4_Darwin_x86_64.tar.gz"
-      sha256 "99915f810a2ca9610ac45ba22d1bbc453c818dbf696b178ef0f9062d5be2ba78"
+      url "https://github.com/harperreed/digest/releases/download/v0.7.5/digest_0.7.5_Darwin_x86_64.tar.gz"
+      sha256 "4147044d7485d00f21876a46f0b59d72b843dc143781ae204cf1140e173f5b80"
 
       def install
         bin.install "digest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harperreed/digest/releases/download/v0.7.4/digest_0.7.4_Darwin_arm64.tar.gz"
-      sha256 "55d0dbab258a41c0d790e720e1112235aa596b82c2b3f78d7db011dc2cd86a3e"
+      url "https://github.com/harperreed/digest/releases/download/v0.7.5/digest_0.7.5_Darwin_arm64.tar.gz"
+      sha256 "b93de194481cb010c528e8522ee8dd61a4121b0bd10cf6b5a0ada5291e630a53"
 
       def install
         bin.install "digest"
@@ -29,15 +29,15 @@ class Digest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/digest/releases/download/v0.7.4/digest_0.7.4_Linux_x86_64.tar.gz"
-      sha256 "031ceb0157441eff3a9624a8963ee40dae5b5d733b7c008e697592b68e00963d"
+      url "https://github.com/harperreed/digest/releases/download/v0.7.5/digest_0.7.5_Linux_x86_64.tar.gz"
+      sha256 "c61477986f7252da985ae90ae85d6e47d572464441b0ec928fa4a98759097941"
       def install
         bin.install "digest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/digest/releases/download/v0.7.4/digest_0.7.4_Linux_arm64.tar.gz"
-      sha256 "6015e65ee73137cd2421b990a46885be7b3e148bd4dcf28ff5a8aa10a04967b4"
+      url "https://github.com/harperreed/digest/releases/download/v0.7.5/digest_0.7.5_Linux_arm64.tar.gz"
+      sha256 "05102293856ce67628a8e4b03f85d2cb502f78d7b9151e1fdf3bb1fb626a8376"
       def install
         bin.install "digest"
       end
