@@ -5,20 +5,20 @@
 class Crm < Formula
   desc "Personal Agent Toolkit - CRM with MCP server and CLI"
   homepage "https://github.com/harperreed/pagen"
-  version "0.5.1"
+  version "0.5.2"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/crm/releases/download/v0.5.1/crm_0.5.1_darwin_amd64.tar.gz"
-    sha256 "4322a85811753e4df6a69848c1790a7dc578a10fbffa1ca4ab97332551a9277d"
+    url "https://github.com/harperreed/crm/releases/download/v0.5.2/crm_0.5.2_darwin_amd64.tar.gz"
+    sha256 "76e5895b62fde0012968534804870c333864e86fd0a8cf4a6ebdbd79ca47923d"
 
     def install
       bin.install "pagen"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/crm/releases/download/v0.5.1/crm_0.5.1_darwin_arm64.tar.gz"
-    sha256 "83cf7dad8c29078be751d4c77d0e16682197ca32464ae49bc17f56e1885411df"
+    url "https://github.com/harperreed/crm/releases/download/v0.5.2/crm_0.5.2_darwin_arm64.tar.gz"
+    sha256 "a9a63121b244587ea724cb5ee910bebb5fcc514e1ea8f6eed01a88cf4bc8645c"
 
     def install
       bin.install "pagen"
