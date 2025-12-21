@@ -5,21 +5,21 @@
 class Health < Formula
   desc "Health tracking CLI with MCP integration"
   homepage "https://github.com/harperreed/health"
-  version "1.3.2"
+  version "1.3.3"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/health/releases/download/v1.3.2/health_1.3.2_Darwin_x86_64.tar.gz"
-    sha256 "585ddca64922c8fb0d0fe71c7b735681cb688baf880c941651075b69d1718c7f"
+    url "https://github.com/harperreed/health/releases/download/v1.3.3/health_1.3.3_Darwin_x86_64.tar.gz"
+    sha256 "618f160f932477aee75194c45d8ef6629441443e6db0abb234ea6e131fd450e1"
 
     def install
       bin.install "health"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/health/releases/download/v1.3.2/health_1.3.2_Darwin_arm64.tar.gz"
-    sha256 "c89fde781c8d88529d83aa77352608fa98b30c5f8fe05d1a8e6e6c9a8ac76bed"
+    url "https://github.com/harperreed/health/releases/download/v1.3.3/health_1.3.3_Darwin_arm64.tar.gz"
+    sha256 "314f7d2783466b512a3d491f883fa69297b82908316f288e927e15f9ca0279ff"
 
     def install
       bin.install "health"
