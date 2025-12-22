@@ -5,21 +5,21 @@
 class Position < Formula
   desc "Simple location tracking CLI with MCP integration and Charm cloud sync"
   homepage "https://github.com/harperreed/position"
-  version "0.8.4"
+  version "0.8.5"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/position/releases/download/v0.8.4/position_0.8.4_Darwin_x86_64.tar.gz"
-    sha256 "a7a4d0eb2c4db66b464ef9f2745e9f604232eeb9a8e04b48c19659c9bbaca9c6"
+    url "https://github.com/harperreed/position/releases/download/v0.8.5/position_0.8.5_Darwin_x86_64.tar.gz"
+    sha256 "8123e24329c1ec84df92f80caa2b78f41ef69438ba360637b12c539efe913b2a"
 
     def install
       bin.install "position"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/position/releases/download/v0.8.4/position_0.8.4_Darwin_arm64.tar.gz"
-    sha256 "a85137c0f9324ccbf8b1e155fa001948d127730f44d0655323335860fc851ea2"
+    url "https://github.com/harperreed/position/releases/download/v0.8.5/position_0.8.5_Darwin_arm64.tar.gz"
+    sha256 "0e61d6954b2b2b486c033f2f4f819133b7830695bb7aee128de57971679371be"
 
     def install
       bin.install "position"
