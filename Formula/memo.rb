@@ -5,21 +5,21 @@
 class Memo < Formula
   desc "A command-line notes tool with markdown, tags, and MCP support"
   homepage "https://github.com/harperreed/memo"
-  version "0.9.4"
+  version "0.9.5"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/memo/releases/download/v0.9.4/memo_0.9.4_Darwin_x86_64.tar.gz"
-    sha256 "192f5c376f60bafb7d134a89f79ea3a81e85f2dd8a1a2f743981ba077b9d9d4e"
+    url "https://github.com/harperreed/memo/releases/download/v0.9.5/memo_0.9.5_Darwin_x86_64.tar.gz"
+    sha256 "3e7091c856ab1ad06dc1be622debcf948d250f0639f0d28111316d0bc11d593d"
 
     def install
       bin.install "memo"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/memo/releases/download/v0.9.4/memo_0.9.4_Darwin_arm64.tar.gz"
-    sha256 "ffd1a0509785d9b7561e91d3990ffa937df67dc6b67253a064579722786ca433"
+    url "https://github.com/harperreed/memo/releases/download/v0.9.5/memo_0.9.5_Darwin_arm64.tar.gz"
+    sha256 "9d9ef29d08025467378cdb30597528e4fa573e88106c7d5c1a9b33d88a518e1c"
 
     def install
       bin.install "memo"
