@@ -5,21 +5,21 @@
 class PushCli < Formula
   desc "CLI and MCP server for Pushover notifications"
   homepage "https://github.com/harperreed/push-cli"
-  version "0.1.1"
+  version "0.2.3"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/harperreed/push-cli/releases/download/v0.1.1/push-cli_0.1.1_Darwin_x86_64.tar.gz"
-    sha256 "6658b9c2f25270d9ed55910428c3c9d80f7694c06bd34a48723d3309e963d474"
+    url "https://github.com/harperreed/push-cli/releases/download/v0.2.3/push-cli_0.2.3_Darwin_x86_64.tar.gz"
+    sha256 "b100b1793a8f909258d04b66e08848a8bcc69d3a6171d88e1b46327324aa5f6a"
 
     def install
       bin.install "push"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/harperreed/push-cli/releases/download/v0.1.1/push-cli_0.1.1_Darwin_arm64.tar.gz"
-    sha256 "557138467dec2c53aa18fdbccff18ad3dc398c7978457a401dae99868c9f10c3"
+    url "https://github.com/harperreed/push-cli/releases/download/v0.2.3/push-cli_0.2.3_Darwin_arm64.tar.gz"
+    sha256 "624fc0bf018bbec5b263fc09e19ca8a649bb550bde7dcdca5d100da7ea2b1300"
 
     def install
       bin.install "push"
