@@ -5,23 +5,23 @@
 class Digest < Formula
   desc "RSS/Atom feed tracker for humans and AI agents"
   homepage "https://github.com/harperreed/digest"
-  version "0.11.4"
+  version "0.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harperreed/digest/releases/download/v0.11.4/digest_0.11.4_Darwin_x86_64.tar.gz"
-      sha256 "79b0a860a6d163bd2a8c37006d41ee809880c6711508c9cbbda75c1a3c099630"
+      url "https://github.com/harperreed/digest/releases/download/v0.12.0/digest_0.12.0_Darwin_x86_64.tar.gz"
+      sha256 "affbcfb86f8e37bbfd5d926278516a09e156b7e9046ca6e6b169ff7811f3135d"
 
-      def install
+      define_method(:install) do
         bin.install "digest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harperreed/digest/releases/download/v0.11.4/digest_0.11.4_Darwin_arm64.tar.gz"
-      sha256 "47808f03354a5e12d20d0672e8bc6b0e3bbf14f1bb622408e0de88a13865bf5b"
+      url "https://github.com/harperreed/digest/releases/download/v0.12.0/digest_0.12.0_Darwin_arm64.tar.gz"
+      sha256 "0230ef1b4034c48791e8178eddaec72206db8afb9dec7c408c02159ad069187c"
 
-      def install
+      define_method(:install) do
         bin.install "digest"
       end
     end
@@ -29,16 +29,16 @@ class Digest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/digest/releases/download/v0.11.4/digest_0.11.4_Linux_x86_64.tar.gz"
-      sha256 "56095d434f640c5d0aa556f6dc1a6f7f53dbe466315e8fbfc8f872bfdb505203"
-      def install
+      url "https://github.com/harperreed/digest/releases/download/v0.12.0/digest_0.12.0_Linux_x86_64.tar.gz"
+      sha256 "4db1b37052145267f5a6888e326a8b9bda9562831a80d967b4dd2f91734a3af0"
+      define_method(:install) do
         bin.install "digest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/digest/releases/download/v0.11.4/digest_0.11.4_Linux_arm64.tar.gz"
-      sha256 "4b1350c23d7ca5f5022859147b66246fe7343dfa84cdf86e15b8279929d08e2f"
-      def install
+      url "https://github.com/harperreed/digest/releases/download/v0.12.0/digest_0.12.0_Linux_arm64.tar.gz"
+      sha256 "f23738a7ecf45403504ebee5afaf838a06438e8b8ebc54f6de36efa01ca6a01c"
+      define_method(:install) do
         bin.install "digest"
       end
     end
