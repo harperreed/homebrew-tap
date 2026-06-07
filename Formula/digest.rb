@@ -5,21 +5,21 @@
 class Digest < Formula
   desc "RSS/Atom feed tracker for humans and AI agents"
   homepage "https://github.com/harperreed/digest"
-  version "0.14.1"
+  version "0.15.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harperreed/digest/releases/download/v0.14.1/digest_0.14.1_Darwin_x86_64.tar.gz"
-      sha256 "954ee21712f7bdd60dd71ccd6d15b85ceb7fc2edac141db50899b08733842d28"
+      url "https://github.com/harperreed/digest/releases/download/v0.15.0/digest_0.15.0_Darwin_x86_64.tar.gz"
+      sha256 "d94750109fd0cae05fbbf765036468dd9d8307e47189ea64f0ecc169cb42325f"
 
       define_method(:install) do
         bin.install "digest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harperreed/digest/releases/download/v0.14.1/digest_0.14.1_Darwin_arm64.tar.gz"
-      sha256 "edf7e77f4a3414b33ad346409a359cad0029862a85f7316fba0abf3a18d3ed26"
+      url "https://github.com/harperreed/digest/releases/download/v0.15.0/digest_0.15.0_Darwin_arm64.tar.gz"
+      sha256 "4b2ac945193f087789fc96b6c32efb0f7d75d96b5fcf3b0858d4dac562d221c5"
 
       define_method(:install) do
         bin.install "digest"
@@ -29,15 +29,15 @@ class Digest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/digest/releases/download/v0.14.1/digest_0.14.1_Linux_x86_64.tar.gz"
-      sha256 "02523af7a2e19e52e0ef51a4352e892c7f024ad93f351d5b8a527824f1dfeb58"
+      url "https://github.com/harperreed/digest/releases/download/v0.15.0/digest_0.15.0_Linux_x86_64.tar.gz"
+      sha256 "b9c8193f66afb5b5547f2c154ddc6d7d88311030394026fc71fb43882dc9d7d6"
       define_method(:install) do
         bin.install "digest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/digest/releases/download/v0.14.1/digest_0.14.1_Linux_arm64.tar.gz"
-      sha256 "c501a244a598f10cd0ef6649fa66750c33fb8ed832ba37d1e6df1de4a82a56a2"
+      url "https://github.com/harperreed/digest/releases/download/v0.15.0/digest_0.15.0_Linux_arm64.tar.gz"
+      sha256 "1076562b97f404636d9e8f8b0b1517d2c0b46c34bca047a25a5a66845a1a9a5f"
       define_method(:install) do
         bin.install "digest"
       end
