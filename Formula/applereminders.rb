@@ -4,12 +4,12 @@
 class Applereminders < Formula
   desc "Drop-in replacement for reminders-cli using EventKit with async/await"
   homepage "https://github.com/harperreed/applereminders"
-  version "0.0.5"
+  version "0.1.0"
   license "MIT"
   depends_on :macos
 
-  url "https://github.com/harperreed/applereminders/releases/download/v0.0.5/reminders-macos-universal.tar.gz"
-  sha256 "cbe98078e93e661a3dc1ad60859dd523be9506fde216c4701979969cfa32a600"
+  url "https://github.com/harperreed/applereminders/releases/download/v0.1.0/reminders-macos-universal.tar.gz"
+  sha256 "661f5ba8092649b818620f9279fe390de666dded411a1b94e7e9a3fd8e95ca5c"
 
   def install
     bin.install "reminders"
