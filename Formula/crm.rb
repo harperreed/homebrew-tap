@@ -5,20 +5,20 @@
 class Crm < Formula
   desc "Lightweight CRM with MCP server and CLI for contacts, companies, and relationships"
   homepage "https://github.com/harperreed/crm"
-  version "2.2.0"
+  version "2.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harperreed/crm/releases/download/v2.2.0/crm_2.2.0_darwin_amd64.tar.gz"
-      sha256 "9ef61aa3d2f47570ad273dfa3596aaaa72645b271ce1004c3f53ea3afea76319"
+      url "https://github.com/harperreed/crm/releases/download/v2.3.0/crm_2.3.0_darwin_amd64.tar.gz"
+      sha256 "620af76f83dd3611cf252e829d752f48fd1460dbe1c74cf55440614fbe6acf8f"
 
       define_method(:install) do
         bin.install "crm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harperreed/crm/releases/download/v2.2.0/crm_2.2.0_darwin_arm64.tar.gz"
-      sha256 "4bd184d54778975b7d5b704dcead9641a4170bc201dfff076396ee29e4ae70b2"
+      url "https://github.com/harperreed/crm/releases/download/v2.3.0/crm_2.3.0_darwin_arm64.tar.gz"
+      sha256 "439a1337204a60a8624c10edd22466c252d2eb1cbc49fd9fc0d531cc6cc60d01"
 
       define_method(:install) do
         bin.install "crm"
@@ -28,15 +28,15 @@ class Crm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/crm/releases/download/v2.2.0/crm_2.2.0_linux_amd64.tar.gz"
-      sha256 "60deb4ec5c5f67542f149537b629923b717947d634a6799a231426b07a278c88"
+      url "https://github.com/harperreed/crm/releases/download/v2.3.0/crm_2.3.0_linux_amd64.tar.gz"
+      sha256 "4764f33ca93164a57eb9827f087a92422a882dc3281633cf9b72c7923627d23b"
       define_method(:install) do
         bin.install "crm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harperreed/crm/releases/download/v2.2.0/crm_2.2.0_linux_arm64.tar.gz"
-      sha256 "918d6d8d5aad242a74ca0f3ce72dc797a8705e7f897748763e7be376e7b4965d"
+      url "https://github.com/harperreed/crm/releases/download/v2.3.0/crm_2.3.0_linux_arm64.tar.gz"
+      sha256 "945dce045c56774709db4b5544da7db1f996d147abacb9c0c54c622b8c6d78f6"
       define_method(:install) do
         bin.install "crm"
       end
